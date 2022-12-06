@@ -18,7 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/welcomescreenbg" />
+        app:srcCompat="@drawable/welcomescreenbg"
+        android:contentDescription="@string/backgroung_image2" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,14 +29,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Go all in"
+        android:text="@string/go_all_in"
         android:textColor="#E2E2E2"
         android:textSize="46sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="on going all out"
+        android:text="@string/on_going_all_out"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,7 +61,7 @@
         android:layout_width="275dp"
         android:layout_height="66dp"
         android:layout_marginTop="80dp"
-        android:text="Find a team in youre sity and dominate league"
+        android:text="@string/find_a_team_in_youre_sity_and_dominate_league"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -68,7 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/getStartedBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -76,9 +78,10 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/swoosh_btn"
         android:fontFamily="@font/montserrat_subrayada"
-        android:text="get started"
+        android:text="@string/get_started"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
