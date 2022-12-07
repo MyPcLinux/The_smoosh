@@ -22,4 +22,6 @@
     <string name="finish">finish</string>
     <string name="todo">TODO</string>
     <string name="backgroung_image3">backgroung image3</string>
+    <string name="search_league">Looking for a co-ed beginner league near you ...</string>
+    <string name="picture_backgraund">picture_backgraund</string>
 </resources>
