@@ -12,4 +12,14 @@
     <string name="co_ed">Co-ed</string>
     <string name="desired_language">Desired language</string>
     <string name="next">NEXT</string>
+    <string name="i_am_a">I am a :</string>
+    <string name="beginner">beginner</string>
+    <string name="beginner1">beginner</string>
+    <string name="beginner2">beginner</string>
+    <string name="baller">baller</string>
+    <string name="baller1">baller</string>
+    <string name="baller2">baller</string>
+    <string name="finish">finish</string>
+    <string name="todo">TODO</string>
+    <string name="backgroung_image3">backgroung image3</string>
 </resources>
