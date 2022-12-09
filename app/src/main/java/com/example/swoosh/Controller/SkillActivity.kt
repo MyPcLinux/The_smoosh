@@ -4,24 +4,24 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.swoosh.Model.Player
 import com.example.swoosh.R
-import com.example.swoosh.Utilities.EXTRA_SKILL
+import com.example.swoosh.Utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_skill.*
 
 class SkillActivity: BaseActivity() {
-    var league = ""
-    var choseSkill = ""
+
+   lateinit var classPlayer: Player
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill)
-      league = intent.getStringExtra(EXTRA_LEAGUE).toString()
+      classPlayer = intent.getParcelableExtra<Player>(EXTRA_PLAYER)!!
 
         skillToFinishBtn.setOnClickListener {
-            if (choseSkill != "") {
+            if (classPlayer.skill != "") {
                 val finishActivity = Intent(this, FinishActivity::class.java)
-                finishActivity.putExtra(EXTRA_LEAGUE, league)
-                finishActivity.putExtra(EXTRA_SKILL, choseSkill)
+                finishActivity.putExtra(EXTRA_PLAYER, classPlayer)
                 startActivity(finishActivity)
             }else{
                 Toast.makeText(this,"Please select one of the following items", Toast.LENGTH_LONG).show()
@@ -30,11 +30,11 @@ class SkillActivity: BaseActivity() {
     }
     fun beginnerOnClick(view: View) {
         ballerSkillBtn.isChecked = false
-        choseSkill = "beginner"
+        classPlayer.skill = "beginner"
     }
     fun ballerOnClick(view: View) {
         beginerSkillBtn.isChecked = false
-        choseSkill = "baller"
+        classPlayer.skill = "baller"
     }
 
 }
